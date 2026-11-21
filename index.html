@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laporan Penggunaan GenAI dalam Riset</title>
+<style>body{margin:0;padding:32px 16px;background:#fff;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}</style>
+</head>
+<body>
+<!-- MULAI: salin dari sini untuk blok Custom HTML WordPress -->
+<style>
+.gai{font-family:inherit;color:#0b1f4b;max-width:980px;margin:0 auto;line-height:1.55}
+.gai *{box-sizing:border-box}
+.gai h2.gai-title{font-size:clamp(28px,4vw,42px);line-height:1.1;margin:0 0 16px}
+.gai h3{font-size:22px;line-height:1.25;margin:0 0 6px}
+.gai p{margin:0 0 12px}
+.gai .gai-lede{font-size:19px}
+.gai .gai-big{font-size:1.5em}
+.gai section{margin-top:40px;padding-top:24px;border-top:1px solid #e3e7f2}
+.gai .gai-muted{color:#5a6584;font-size:14px}
+.gai .gai-pane{background:#fff;border:1px solid #e3e7f2;border-radius:10px;padding:20px}
+.gai .gai-two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:20px;margin-top:10px}
+.gai .gai-bars{display:grid;gap:8px;margin-top:10px}
+.gai .gai-row{display:grid;grid-template-columns:minmax(0,11em) minmax(0,1fr) 4em;gap:8px;align-items:center;font-size:14px}
+.gai .gai-hl .gai-lab{font-weight:700}
+.gai .gai-dim{opacity:.5}
+.gai .gai-track{position:relative;display:block;height:16px}
+.gai .gai-t2{height:26px}
+.gai .gai-bar{display:block;height:100%;border-radius:2px}
+.gai .gai-tick{position:absolute;top:-3px;bottom:-3px;width:2px;background:#0b1f4b}
+.gai .gai-val{text-align:right;white-space:nowrap;font-size:13px;font-variant-numeric:tabular-nums}
+.gai .gai-legend{display:flex;flex-wrap:wrap;gap:12px;font-size:13px;color:#5a6584;margin:6px 0}
+.gai .gai-sw{display:inline-block;width:12px;height:12px;border-radius:2px;vertical-align:-2px;margin-right:5px}
+.gai ul{padding-left:1.2em}.gai li{margin-bottom:6px}
+@media(max-width:520px){.gai .gai-row{grid-template-columns:minmax(0,8em) minmax(0,1fr) 3.6em;font-size:13px}}
+.gai .gai-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:24px 0}.gai .gai-num{font-size:40px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}.gai .gai-k{font-size:13px;color:#5a6584}
+</style>
+<style>
+.gai{position:relative}
+.gai .gai-nav{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 0}
+.gai .gai-nav a{font-size:14px;padding:8px 12px;border:1px solid #e3e7f2;border-radius:999px;color:#0b1f4b;text-decoration:none}
+.gai .gai-nav a:hover{background:#f3f5fa}
+.gai .gai-seg{display:inline-flex;flex-wrap:wrap;border:1px solid #e3e7f2;border-radius:8px;overflow:hidden;margin:6px 0 12px}
+.gai .gai-seg button{font:inherit;font-size:14px;padding:10px 14px;min-height:44px;border:0;background:#fff;color:#0b1f4b;cursor:pointer}
+.gai .gai-seg button[aria-pressed=true]{background:#0b1f4b;color:#fff}
+.gai .gai-seg button:focus-visible{outline:2px solid #4f7fe0;outline-offset:-2px}
+.gai .gai-row{cursor:default;border-radius:4px;padding:2px 0}
+.gai .gai-row:hover,.gai .gai-row.gai-on{background:#f3f5fa}
+.gai .gai-bar{transition:width .8s cubic-bezier(.2,.7,.2,1)}
+.gai .gai-fig{position:relative}
+.gai .gai-fig circle{transition:cx .7s ease,cy .7s ease,r .2s;cursor:pointer}
+.gai .gai-fig circle:hover{r:9}
+.gai .gai-fig text.pl{transition:x .7s ease,y .7s ease}
+.gai .gai-tip{position:absolute;z-index:5;pointer-events:none;background:#fff;border:1px solid #e3e7f2;box-shadow:0 6px 20px rgba(11,31,75,.12);border-radius:8px;padding:8px 10px;font-size:13px;line-height:1.4;max-width:260px}
+.gai details{border:1px solid #e3e7f2;border-radius:8px;padding:10px 14px;margin-bottom:8px}
+.gai details summary{cursor:pointer}
+.gai details p{margin:8px 0 0}
+@media (prefers-reduced-motion:reduce){.gai .gai-bar,.gai .gai-fig circle,.gai .gai-fig text.pl{transition:none}}
+</style>
+<div class="gai" id="gai">
+<h2 class="gai-title">Laporan penggunaan GenAI dalam riset</h2>
+<p class="gai-lede">Dua laporan baru dari OpenAI dan Anthropic menyajikan sesuatu yang masih langka: bukti perilaku berskala besar tentang bagaimana GenAI dipakai dalam penelitian lintas disiplin. Peneliti memakai AI terutama untuk membaca, menulis, dan menganalisis data, jauh lebih jarang untuk mengumpulkan data atau merumuskan hipotesis.</p>
+<div class="gai-kpis">
+<div class="gai-pane"><div class="gai-k">OpenAI · 20 Agu–22 Sep 2026</div><div class="gai-num" data-count="580186">580.186</div><div>pesan ilmiah dari 1.819 peneliti di paket ChatGPT for Academic Researchers</div></div>
+<div class="gai-pane"><div class="gai-k">Anthropic · 2 Agu–30 Sep 2026</div><div class="gai-num" data-count="207049">207.049</div><div>sesi riset di Claude (128.914) dan Claude Code (78.135), paket konsumen</div></div>
+<div class="gai-pane"><div class="gai-k">Celah terbesar</div><div class="gai-num">67,6%</div><div>peneliti memakai ChatGPT untuk ideasi, tetapi ideasi hanya 5,3% dari pesan</div></div>
+</div>
+<nav class="gai-nav"><a href="#gai-s1">1. OpenAI</a><a href="#gai-s2">2. Anthropic</a><a href="#gai-s3">3. Mengapa berbeda</a><a href="#gai-s4">4. Bidang</a></nav>
+
+<section id="gai-s1">
+<h3>1. OpenAI: membaca dan menulis mendominasi, ideasi luas tapi tipis</h3>
+<p>Membaca dan akuisisi pengetahuan (27,7%) serta menulis dan komunikasi (26,9%) mengisi lebih dari separuh pesan. Grafik kanan membaca hal berbeda: berapa persen peneliti yang mengirim minimal tiga pesan dalam suatu alur kerja. Arahkan kursor atau ketuk satu baris untuk melihat kedua angkanya.</p>
+<div class="gai-seg" role="group" aria-label="Urutkan"><button type="button" data-sort="proses" aria-pressed="true">Urutan proses riset</button><button type="button" data-sort="besar" aria-pressed="false">Urutkan terbesar</button></div>
+<div class="gai-two">
+<div class="gai-pane"><b>A. Porsi pesan ilmiah</b><div class="gai-muted">Rata-rata porsi per peneliti</div><div class="gai-bars" id="gai-oa1"></div></div>
+<div class="gai-pane"><b>B. Porsi peneliti yang memakai</b><div class="gai-muted">Minimal 3 pesan dalam alur kerja</div><div class="gai-bars" id="gai-oa2"></div></div>
+</div>
+<p class="gai-muted">Sumber: OpenAI, Science at the Frontier (2026), Figure 3.</p>
+</section>
+
+<section id="gai-s2">
+<h3>2. Anthropic: analisis data mendominasi, membaca jauh lebih kecil</h3>
+<p>Analisis data mengisi 33,7% sesi Claude dan 48,1% sesi Claude Code. Garis tegak menunjukkan porsi waktu kerja peneliti. Pengumpulan data menyita 28,6% waktu peneliti, tetapi hanya sekitar 12% sesi.</p>
+<div class="gai-seg" role="group" aria-label="Antarmuka"><button type="button" data-ct="both" aria-pressed="true">Keduanya</button><button type="button" data-ct="claude" aria-pressed="false">Claude</button><button type="button" data-ct="claude_code" aria-pressed="false">Claude Code</button></div>
+<div class="gai-pane">
+<div class="gai-legend"><span><i class="gai-sw" style="background:#d97757"></i>Claude</span><span><i class="gai-sw" style="background:#4f7fe0"></i>Claude Code</span><span><i class="gai-sw" style="width:3px;background:#0b1f4b"></i>Porsi waktu riset</span></div>
+<div class="gai-bars" id="gai-ct"></div></div>
+<p class="gai-muted">Sumber: Anthropic, AI for Scientific Discovery (2026), Figure 3. Porsi waktu riset untuk membaca, teoretis, desain, dan lainnya dibaca dari grafik dan bersifat perkiraan.</p>
+</section>
+
+<section id="gai-s3">
+<h3>3. Mengapa angkanya berbeda?</h3>
+<p>Perbedaan ini sebagian besar bersifat metodologis, bukan kontradiksi. Klik tiap poin untuk penjelasan.</p>
+<details open><summary><b>Satuan analisis</b></summary><p>OpenAI menghitung pesan dan merata-ratakannya per peneliti. Anthropic menghitung sesi yang diberi satu label tugas utama. Membaca, yang sering menyelip di dalam tugas lain, mudah terhitung kecil di tingkat sesi.</p></details>
+<details><summary><b>Populasi</b></summary><p>Data OpenAI dari paket khusus peneliti akademik; data Anthropic dari paket konsumen umum ditambah Claude Code, alat pemrograman.</p></details>
+<details><summary><b>Taksonomi</b></summary><p>OpenAI memisahkan kode riset dari analisis ilmiah; Anthropic memasukkan banyak pekerjaan kode ke analisis data atau desain dan pengembangan.</p></details>
+<details><summary><b>Orang versus volume</b></summary><p>67,6% OpenAI adalah porsi peneliti; 4,2% Anthropic adalah porsi sesi. Keduanya bisa benar sekaligus. Laporan OpenAI membahas perbedaan ini secara eksplisit.</p></details>
+</section>
+
+<section id="gai-s4">
+<h3>4. Perbandingan bidang: ilmu sosial aktif bercakap, alat agen milik bidang komputasi</h3>
+<p>Setiap titik adalah satu bidang. Titik di atas garis paritas memakai AI lebih dari ukuran bidangnya. Ganti antarmuka untuk melihat titik bergeser: di Claude Code, ilmu komputer saja mengisi 32,7% sesi dengan hanya 4,3% peneliti dunia.</p>
+<div class="gai-seg" role="group" aria-label="Antarmuka"><button type="button" data-sc="claude" aria-pressed="true">Claude</button><button type="button" data-sc="claude_code" aria-pressed="false">Claude Code</button></div>
+<div class="gai-legend" id="gai-dl"></div>
+<div class="gai-pane"><div class="gai-fig" id="gai-sc"></div></div>
+<p class="gai-muted">Sumber: Anthropic (2026), Figure 1. Kecuali ilmu komputer, teknik, dan kedokteran, posisi bidang dibaca dari grafik log-log dan bersifat perkiraan. Ditampilkan 25 dari 34 bidang.</p>
+</section>
+
+<section>
+<h3>Yang perlu dibaca dengan hati-hati</h3>
+<p>Kedua laporan disusun oleh perusahaan yang produknya sedang diukur. Klasifikasi percakapan dilakukan oleh model bahasa, dan sampelnya pengguna yang sudah aktif memakai AI. Pertanyaan yang tersisa: mengapa ideasi dan pengumpulan data, yang dinilai peneliti paling menentukan, justru paling jarang diserahkan kepada AI?</p>
+<p class="gai-muted">Referensi: OpenAI (2026). <i>Science at the Frontier: How Scientists Use ChatGPT</i>. Anthropic (2026). <i>AI for Scientific Discovery: How Researchers Use Claude</i>.</p>
+</section>
+<div class="gai-tip" id="gai-tip" hidden></div>
+</div>
+<script>
+(function(){
+var D={"oa": [{"workflow": "Membaca & akuisisi pengetahuan", "message_share": 27.7, "scientist_share": 94.2}, {"workflow": "Ideasi & perumusan hipotesis", "message_share": 5.3, "scientist_share": 67.6}, {"workflow": "Administrasi", "message_share": 2.7, "scientist_share": 42.2}, {"workflow": "Pengumpulan data", "message_share": 1.0, "scientist_share": 23.2}, {"workflow": "Pengembangan perangkat lunak & kode riset", "message_share": 13.8, "scientist_share": 61.7}, {"workflow": "Analisis ilmiah", "message_share": 16.7, "scientist_share": 79.0}, {"workflow": "Menulis & komunikasi", "message_share": 26.9, "scientist_share": 88.5}, {"workflow": "Telaah sejawat & layanan", "message_share": 2.1, "scientist_share": 33.6}, {"workflow": "Riset otonom ujung-ke-ujung", "message_share": 0.4, "scientist_share": 6.3}, {"workflow": "Mentoring & pengajaran", "message_share": 3.1, "scientist_share": 32.2}], "ct": [{"category": "Analisis data", "claude": 33.7, "claude_code": 48.1, "research_time": 27.6}, {"category": "Menulis & komunikasi", "claude": 32.0, "claude_code": 17.6, "research_time": 16.0}, {"category": "Pengumpulan data", "claude": 11.5, "claude_code": 11.9, "research_time": 28.6}, {"category": "Membaca & akuisisi pengetahuan", "claude": 7.6, "claude_code": 3.7, "research_time": 7.4}, {"category": "Analisis teoretis", "claude": 5.0, "claude_code": 4.7, "research_time": 4.4}, {"category": "Desain & pengembangan", "claude": 4.7, "claude_code": 7.7, "research_time": 3.4}, {"category": "Ideasi & perumusan hipotesis", "claude": 4.2, "claude_code": 2.1, "research_time": 7.1}, {"category": "Lainnya", "claude": 1.3, "claude_code": 4.2, "research_time": 5.7}], "cf": [{"field": "Ilmu komputer", "domain": "Formal", "researchers": 4.3, "claude": 11.9, "claude_code": 32.7}, {"field": "Teknik", "domain": "Fisika", "researchers": 8.0, "claude": 8.4, "claude_code": 6.8}, {"field": "Kedokteran & klinis", "domain": "Kesehatan", "researchers": 22.0, "claude": 7.7, "claude_code": 2.7}, {"field": "Ilmu biomedis", "domain": "Hayati", "researchers": 9.5, "claude": 7.2, "claude_code": 5.3}, {"field": "Ekonomi", "domain": "Sosial", "researchers": 1.4, "claude": 5.7, "claude_code": 7.4}, {"field": "Fisika & astronomi", "domain": "Fisika", "researchers": 5.5, "claude": 5.2, "claude_code": 9.9}, {"field": "Biologi", "domain": "Hayati", "researchers": 4.0, "claude": 5.1, "claude_code": 7.6}, {"field": "Kesehatan masyarakat & epidemiologi", "domain": "Kesehatan", "researchers": 4.6, "claude": 4.7, "claude_code": 1.8}, {"field": "Bisnis & manajemen", "domain": "Sosial", "researchers": 2.8, "claude": 4.2, "claude_code": 1.2}, {"field": "Pendidikan", "domain": "Sosial", "researchers": 4.4, "claude": 3.8, "claude_code": 0.8}, {"field": "Hukum", "domain": "Sosial", "researchers": 1.4, "claude": 3.0, "claude_code": 0.65}, {"field": "Matematika", "domain": "Formal", "researchers": 1.5, "claude": 2.6, "claude_code": 3.8}, {"field": "Psikologi", "domain": "Sosial", "researchers": 2.0, "claude": 2.4, "claude_code": 0.8}, {"field": "Ilmu material", "domain": "Fisika", "researchers": 2.9, "claude": 2.5, "claude_code": 2.3}, {"field": "Ilmu pertanian", "domain": "Hayati", "researchers": 5.0, "claude": 2.3, "claude_code": 0.75}, {"field": "Neurosains", "domain": "Hayati", "researchers": 1.6, "claude": 2.0, "claude_code": 2.5}, {"field": "Ilmu politik", "domain": "Sosial", "researchers": 1.1, "claude": 1.8, "claude_code": 0.75}, {"field": "Kimia", "domain": "Fisika", "researchers": 3.5, "claude": 1.7, "claude_code": 1.6}, {"field": "Statistika", "domain": "Formal", "researchers": 0.25, "claude": 1.4, "claude_code": 1.5}, {"field": "Komunikasi & media", "domain": "Sosial", "researchers": 0.6, "claude": 1.0, "claude_code": 0.5}, {"field": "Filsafat", "domain": "Humaniora", "researchers": 0.45, "claude": 0.95, "claude_code": 0.25}, {"field": "Antropologi", "domain": "Sosial", "researchers": 0.75, "claude": 0.8, "claude_code": 0.14}, {"field": "Sastra", "domain": "Humaniora", "researchers": 0.95, "claude": 0.75, "claude_code": 0.14}, {"field": "Gizi & dietetika", "domain": "Kesehatan", "researchers": 0.7, "claude": 0.35, "claude_code": 0.09}, {"field": "Kedokteran hewan", "domain": "Hayati", "researchers": 0.95, "claude": 0.22, "claude_code": 0.045}]};
+var root=document.getElementById('gai'); if(!root) return;
+var tip=document.getElementById('gai-tip');
+var CA='#d97757',CB='#4f7fe0',OA='#8fa2f5',INK='#0b1f4b',MUT='#5a6584',LINE='#e3e7f2';
+var DOM={Formal:['#2a9d8f','Ilmu formal'],Fisika:['#4f7fe0','Fisik & teknik'],Hayati:['#6aa84f','Hayati'],Kesehatan:['#c0392f','Kesehatan'],Sosial:['#e0a030','Sosial'],Humaniora:['#a05cc0','Humaniora']};
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+function f(v){return v.toFixed(1).replace('.',',')+'%';}
+function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e;}
+function showTip(html,ev){tip.innerHTML=html;tip.hidden=false;var r=root.getBoundingClientRect();
+  var x=ev.clientX-r.left+12,y=ev.clientY-r.top+12;x=Math.min(x,r.width-tip.offsetWidth-4);tip.style.left=Math.max(0,x)+'px';tip.style.top=y+'px';}
+function hideTip(){tip.hidden=true;}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+var seen=false;
+function grow(container){var bars=container.querySelectorAll('.gai-bar');for(var i=0;i<bars.length;i++){var b=bars[i];
+  if(seen||reduce){b.style.width=b.dataset.w;}else{b.style.width='0';}}}
+function rowEvents(row,html){row.addEventListener('mousemove',function(e){showTip(html,e);});row.addEventListener('mouseleave',hideTip);
+  row.addEventListener('click',function(e){showTip(html,e);});}
+// Section 1
+var oaOrder='proses';
+function drawOA(){
+  var rows=D.oa.slice(); if(oaOrder==='besar') rows.sort(function(a,b){return b.message_share-a.message_share;});
+  [['gai-oa1','message_share',30,OA],['gai-oa2','scientist_share',100,CB]].forEach(function(c){
+    var box=document.getElementById(c[0]); box.textContent='';
+    rows.forEach(function(r){var row=el('div','gai-row');row.dataset.k=r.workflow;
+      row.append(el('span','gai-lab',r.workflow));var t=el('span','gai-track');var b=el('span','gai-bar');
+      b.style.background=c[3];b.dataset.w=(r[c[1]]/c[2]*100)+'%';t.append(b);row.append(t);row.append(el('span','gai-val',f(r[c[1]])));
+      rowEvents(row,'<b>'+esc(r.workflow)+'</b><br>'+f(r.message_share)+' pesan<br>'+f(r.scientist_share)+' peneliti memakai');
+      row.addEventListener('mouseenter',function(){link(r.workflow,true);});row.addEventListener('mouseleave',function(){link(r.workflow,false);});
+      box.append(row);});
+    grow(box);});
+}
+function link(k,on){var rs=root.querySelectorAll('#gai-s1 .gai-row');for(var i=0;i<rs.length;i++)rs[i].classList.toggle('gai-on',on&&rs[i].dataset.k===k);}
+// Section 2
+var ctMode='both';
+function drawCT(){
+  var box=document.getElementById('gai-ct');box.textContent='';
+  D.ct.forEach(function(r){var row=el('div','gai-row');row.append(el('span','gai-lab',r.category));
+    var t=el('span','gai-track gai-t2');
+    if(ctMode!=='claude_code'){var a=el('span','gai-bar');a.style.cssText='background:'+CA+';height:'+(ctMode==='both'?11:24)+'px;margin-bottom:3px';a.dataset.w=(r.claude/50*100)+'%';t.append(a);}
+    if(ctMode!=='claude'){var b=el('span','gai-bar');b.style.cssText='background:'+CB+';height:'+(ctMode==='both'?11:24)+'px';b.dataset.w=(r.claude_code/50*100)+'%';t.append(b);}
+    var k=el('span','gai-tick');k.style.left=(r.research_time/50*100)+'%';t.append(k);row.append(t);
+    var v=el('span','gai-val');
+    if(ctMode!=='claude_code')v.append(el('span',null,f(r.claude)));
+    if(ctMode==='both')v.append(el('br'));
+    if(ctMode!=='claude'){var s=el('small',null,f(r.claude_code));s.style.color=MUT;v.append(s);}
+    row.append(v);
+    var gap=r.claude-r.research_time;
+    rowEvents(row,'<b>'+esc(r.category)+'</b><br>Claude: '+f(r.claude)+'<br>Claude Code: '+f(r.claude_code)+'<br>Waktu riset: '+f(r.research_time)+'<br><span style="color:'+(gap>=0?'#1d7a4c':'#c0392f')+'">'+(gap>=0?'Di atas':'Di bawah')+' porsi waktunya</span>');
+    box.append(row);});
+  grow(box);
+}
+// Section 4
+var scKey='claude',svg=null;
+var NS='http://www.w3.org/2000/svg';
+function sv(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+var dl=document.getElementById('gai-dl');Object.keys(DOM).forEach(function(k){var s=el('span');var i=el('i','gai-sw');i.style.background=DOM[k][0];s.append(i,DOM[k][1]);dl.append(s);});
+var LAB=['Ilmu komputer','Ekonomi','Hukum','Kedokteran & klinis','Fisika & astronomi','Gizi & dietetika','Sastra'];
+function drawSC(){
+  var box=document.getElementById('gai-sc');var W=Math.max(300,box.clientWidth),H=Math.round(Math.max(340,Math.min(520,W*0.66))),small=W<520;
+  var m={l:44,r:12,t:12,b:40},ylo=0.03,yhi=50;
+  function X(v){return m.l+(Math.log10(v)+1)/(Math.log10(30)+1)*(W-m.l-m.r);}
+  function Y(v){v=Math.max(v,ylo);return H-m.b-(Math.log10(v)-Math.log10(ylo))/(Math.log10(yhi)-Math.log10(ylo))*(H-m.t-m.b);}
+  if(!svg||svg.getAttribute('data-w')!=W){
+    box.textContent='';svg=sv('svg',{width:W,height:H,viewBox:'0 0 '+W+' '+H,role:'img','aria-label':'Porsi sesi terhadap porsi peneliti per bidang, skala log','data-w':W});
+    [0.1,0.3,1,3,10,30].forEach(function(v){if(small&&(v==0.3||v==3))return;svg.append(sv('line',{x1:X(v),x2:X(v),y1:m.t,y2:H-m.b,stroke:LINE}));var t=sv('text',{x:X(v),y:H-m.b+18,'text-anchor':'middle','font-size':12,fill:MUT});t.textContent=String(v).replace('.',',');svg.append(t);});
+    [0.03,0.1,0.3,1,3,10,30].forEach(function(v){if(small&&(v==0.3||v==3))return;svg.append(sv('line',{x1:m.l,x2:W-m.r,y1:Y(v),y2:Y(v),stroke:LINE}));var t=sv('text',{x:m.l-6,y:Y(v)+4,'text-anchor':'end','font-size':12,fill:MUT});t.textContent=String(v).replace('.',',');svg.append(t);});
+    svg.append(sv('line',{x1:X(0.1),y1:Y(0.1),x2:X(30),y2:Y(30),stroke:MUT,'stroke-dasharray':'4 4'}));
+    var a=sv('text',{x:W-m.r,y:H-4,'text-anchor':'end','font-size':12,fill:MUT});a.textContent='% peneliti dunia';svg.append(a);
+    var b=sv('text',{x:m.l+4,y:m.t+12,'font-size':12,fill:MUT});b.textContent='% sesi riset';svg.append(b);
+    D.cf.forEach(function(r,i){var c=sv('circle',{r:6,fill:DOM[r.domain][0],stroke:'#fff','stroke-width':1.5,'data-i':i,tabindex:0});
+      c.addEventListener('mousemove',function(e){showTip('<b>'+esc(r.field)+'</b><br>Peneliti dunia: '+f(r.researchers)+'<br>Sesi Claude: '+f(r.claude)+'<br>Sesi Claude Code: '+f(r.claude_code),e);});
+      c.addEventListener('click',function(e){c.dispatchEvent(new MouseEvent('mousemove',{clientX:e.clientX,clientY:e.clientY}));});
+      c.addEventListener('mouseleave',hideTip);svg.append(c);
+      if(!small&&LAB.indexOf(r.field)>-1){var t=sv('text',{'class':'pl','font-size':12,fill:INK,'data-i':i});t.textContent=r.field;svg.append(t);}});
+    box.append(svg);
+  }
+  var cs=svg.querySelectorAll('circle');for(var i=0;i<cs.length;i++){var r=D.cf[cs[i].getAttribute('data-i')];cs[i].setAttribute('cx',X(r.researchers));cs[i].setAttribute('cy',Y(r[scKey]));}
+  var ts=svg.querySelectorAll('text.pl');for(var j=0;j<ts.length;j++){var q=D.cf[ts[j].getAttribute('data-i')];var right=q.researchers>10;
+    ts[j].setAttribute('x',X(q.researchers)+(right?-9:9));ts[j].setAttribute('y',Y(q[scKey])+4);ts[j].setAttribute('text-anchor',right?'end':'start');}
+}
+// Controls
+function seg(sel,attr,fn){var bs=root.querySelectorAll(sel);for(var i=0;i<bs.length;i++)bs[i].addEventListener('click',function(){
+  for(var j=0;j<bs.length;j++)bs[j].setAttribute('aria-pressed',String(bs[j]===this));fn(this.getAttribute(attr));});}
+seg('[data-sort]','data-sort',function(v){oaOrder=v;drawOA();});
+seg('[data-ct]','data-ct',function(v){ctMode=v;drawCT();});
+seg('[data-sc]','data-sc',function(v){scKey=v;drawSC();});
+document.addEventListener('click',function(e){if(!root.contains(e.target))hideTip();});
+// Count-up and reveal
+function countUp(){var ns=root.querySelectorAll('[data-count]');for(var i=0;i<ns.length;i++)(function(n){var end=+n.dataset.count,t0=null;
+  if(reduce)return;function step(t){if(!t0)t0=t;var p=Math.min(1,(t-t0)/1200),v=Math.round(end*(1-Math.pow(1-p,3)));n.textContent=v.toLocaleString('id-ID');if(p<1)requestAnimationFrame(step);}requestAnimationFrame(step);})(ns[i]);}
+drawOA();drawCT();drawSC();
+function reveal(){seen=true;var bs=root.querySelectorAll('.gai-bar');requestAnimationFrame(function(){for(var i=0;i<bs.length;i++)bs[i].style.width=bs[i].dataset.w;});}
+if('IntersectionObserver' in window&&!reduce){
+  var done={};var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;
+    var bs=e.target.querySelectorAll('.gai-bar');for(var i=0;i<bs.length;i++)bs[i].style.width=bs[i].dataset.w;io.unobserve(e.target);});},{threshold:0.2});
+  ['gai-s1','gai-s2'].forEach(function(id){io.observe(document.getElementById(id));});
+  setTimeout(function(){seen=true;},100);
+  countUp();
+} else reveal();
+var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){svg=null;drawSC();},150);});
+})();
+</script>
+<!-- SELESAI -->
+</body>
+</html>
